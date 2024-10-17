@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🍇 Wine is Fine </title>
+</head>
+<style>
+    span {
+        color: #C8AD55;
+    }
+
+    body {
+        background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: #61210F;
+
+    }
+
+    h2 {
+        text-align: center;
+        border: 1px solid #EDAE49;
+        line-height: 40px;
+        padding: 15px;
+        font-size: 18px;
+        color: #3B5249;
+        border-radius: 6px;
+        font-weight: 450;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 80%;
+        border-radius: 25px;
+
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 10px auto;
+        max-width: 45%;
+        text-align: center;
+
+    }
+
+    button {
+
+        display: block;
+        margin: 20px auto;
+        background-color: maroon;
+        color: white;
+        font-size: 21px;
+        padding: 17px 23px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 5px 7px 5px rgba(0, 0, 0, .3);
+        transition: all 210ms ease-in-out;
+    }
+
+    button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+
+    .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #3B5249;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .learn-more:hover {
+        text-decoration: underline;
+        color: #61210F;
+
+    }
+
+    .footer {
+        text-align: center;
+
+    }
+</style>
+
+
+
+
+<body>
+    <div class="container"></div>
+    <h1>Red Wine & White Wine Making </h1>
+    <h2> DO YOU LIKE RED WINE OR WHITE WINE? </h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/897/original/glasses.jpg?1719034381"
+        alt="Red Wine pour">
+    <hr />
+    <br />
+    <p>
+        <strong> Red wine </strong> is made from the must (pulp, including the juice) of red or black grapes and
+        fermentation occurs together with the grape skins, which give the wine its color.
+        <br /><strong> White wine</strong>
+        is made by fermenting juice which is made by pressing crushed grapes to extract a juice; the skins are removed
+        and play no
+        further role.
+        <br />
+        <br />
+        To start primary <span>fermentation</span>, yeast <em> may be added </em> to the must for red wine, or <em> may
+            occur naturally </em> as ambient yeast on
+        the grapes (or in the air). For white wine, yeast <em> may </em> be added to the juice. During this
+        <span>fermentation</span> , which often takes
+        between one and two weeks, the yeast converts most of the sugars in the grape juice into ethanol (alcohol)
+        and
+        carbon dioxide (which is lost to the atmosphere).
+        <br />
+        This process is also known as "<span>alcoholic fermentation</span>"
+        and is a vital step in the winemaking process, as it
+        helps to shape the wine's flavor, aroma, and appearance.
+    </p>
+
+    <br />
+    <hr />
+    <a href="https://en.wikipedia.org/wiki/Winemaking#:~:text=Red%20wine%20is%20made%20from,and%20play%20no%20further%20role."
+        target="_blank" class="learn-more" </a> Learn more on Wikipedia
+    </a>
+
+    <button class="clickWine">
+
+        🍇 Buy Red Wine
+
+    </button>
+    <p class="footer" </p>
+        Created by En Gonz
+
+
+        <script>
+            let age = prompt("How old are you?");
+            if (age < 21) {
+                alert("Hi, there! You must be 21 or older to continue.")
+            } else {
+                alert("Welcome to Wine Making Page!")
+            }
+            age = age.trim()
+
+            function getWine() {
+                name = prompt("What is your name?");
+                wORr = prompt("Do you like White wine or Red wine?")
+                email = prompt("What is your email?");
+
+                name = name.trim()
+                wORr = wORr.toUpperCase().trim()
+                email = email.trim()
+
+
+
+                alert("Thanks " + wORr + " Wine Lover! " + name + ", we will soon send an email to: \n " + email)
+
+
+            }
+
+            let buyWineButton = document.querySelector(".clickWine")
+            buyWineButton.addEventListener("click", getWine)
+
+
+        </script>
+
+</body>
+
+</html>
